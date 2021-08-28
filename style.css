@@ -1,0 +1,30 @@
+html {
+  background: linear-gradient(
+    to bottom right,
+    rgb(231, 156, 17),
+    rgb(238, 255, 192)
+  );
+}
+
+div {
+  background: linear-gradient(
+    to bottom right,
+    rgb(231, 67, 17),
+    rgb(238, 255, 192)
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.omikuji {
+  display: inline;
+  font-size: 64px;
+  color: #fff;
+  line-height: 600px;
+}
