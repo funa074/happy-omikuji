@@ -3,6 +3,10 @@ let omikuji = ["超大吉", "大大吉", "大吉", "吉", "末吉"];
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
+
+let btn = document.getElementsByClassName("btn").innerHTML;
+btn.addEventListener("click", omikuji[getRandomInt(5)]);
+
 console.log(omikuji[getRandomInt(5)]);
 
 // let omikuji0 = "大吉";
