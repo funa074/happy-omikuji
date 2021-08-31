@@ -4,10 +4,15 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-let btn = document.getElementsByClassName("btn").innerHTML;
-btn.addEventListener("click", omikuji[getRandomInt(5)]);
+let btn = document.getElementsByClassName("btn")[0];
 
-console.log(omikuji[getRandomInt(5)]);
+function text(id, text) {
+  id.innerHTML = text;
+}
+
+btn.onclick = function () {
+  text(btn, omikuji[getRandomInt(5)]);
+};
 
 // let omikuji0 = "大吉";
 // let omikuji1 = "吉";
